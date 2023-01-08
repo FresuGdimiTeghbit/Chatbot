@@ -1,0 +1,64 @@
+{
+	"results": [
+		{
+			"letter": "e",
+			"names": [
+				{
+					"name": "Karui Arials",
+					"code": "e01",
+					"uapvHarpege": "0001",
+					"searchString" : "arials",
+					"email": "karui.arials@univ-avignon.fr"
+				}
+			]
+		},
+		{
+			"letter": "e",
+			"names": [
+				{
+					"name": "Gabriel Engels",
+					"code": "e02",
+					"uapvHarpege": "0002",
+					"searchString": "engels",
+					"email": "gabriel.engels@univ-avignon.fr"
+				}
+			]
+		},
+		{
+			"letter": "e",
+			"names": [
+				{
+					"name": "Fabrice Lefèvre",
+					"code": "e03",
+					"uapvHarpege": "0003",
+					"searchString": "lefevre",
+					"email": "fabrice.lefevre@univ-avignon.fr"
+				}
+			]
+		},
+		{
+			"letter": "e",
+			"names": [
+				{
+					"name": "Mickael Rouvier",
+					"code": "e04",
+					"uapvHarpege": "0004",
+					"searchString": "rouvier",
+					"email": "mickael.rouvier@univ-avignon.fr"
+				}
+			]
+		},
+		{
+			"letter": "e",
+			"names": [
+				{
+					"name": "Lilian Rondin",
+					"code": "e05",
+					"uapvHarpege": "0005",
+					"searchString": "rondin",
+					"email": "lilian.rondin@univ-avignon.fr"
+				}
+			]
+		}
+	]
+}

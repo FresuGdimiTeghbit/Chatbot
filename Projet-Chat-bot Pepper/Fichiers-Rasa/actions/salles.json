@@ -1,0 +1,39 @@
+{
+ "results": [
+	 {
+		 "letter": "Agrosciences",
+		 "names": [
+			 {
+			 "name": "a002 (cmi) v",
+			 "code": "AGR_A002",
+			 "searchString": "a002(cmi)vAgrosciencesa002 (cmi) v"
+			 }
+		 ]
+		 },
+		 {
+		 "letter": "CERI",
+		 "names": [
+			 {
+			 "name": "amphi ada",
+			 "code": "CERI_ADA",
+			 "searchString": "amphiadaCERIamphi ada"
+			 }, 
+			 {
+			 "name": "stat1",
+			 "code": "stat1",
+			 "searchString": "stat1"
+			 }, 
+			 {
+			 "name": "stat2",
+			 "code": "stat2",
+			 "searchString": "stat2"
+			 }, 
+			 {
+			 "name": "S7",
+			 "code": "S7",
+			 "searchString": "s7"
+			 }
+		 ]
+	 }
+ ]
+}

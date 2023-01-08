@@ -1,0 +1,134 @@
+version: '2.0'
+config:
+  store_entities_as_slots: true
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true
+intents:
+- greet:
+    use_entities: true
+- goodbye:
+    use_entities: true
+- affirm:
+    use_entities: true
+- deny:
+    use_entities: true
+- mood_great:
+    use_entities: true
+- mood_unhappy:
+    use_entities: true
+- bot_challenge:
+    use_entities: true
+- ask_schedule:
+    use_entities: true
+- give_group:
+    use_entities: true
+- give_section:
+    use_entities: true
+- ask_definition:
+    use_entities: true
+- give_word:
+    use_entities: true
+- give_trans:
+    use_entities: true
+- give_meteo:
+    use_entities: true
+- mood_greatful:
+    use_entities: true
+- utter_ask_sentence:
+    use_entities: true
+- utter_ask_translate:
+    use_entities: true
+- ask_translate:
+    use_entities: true
+- utter_ask_meteo:
+    use_entities: true
+- ask_meteo:
+    use_entities: true
+entities:
+- group
+- section
+slots:
+  group:
+    type: rasa.shared.core.slots.CategoricalSlot
+    initial_value: null
+    auto_fill: true
+    influence_conversation: true
+    values:
+    - ia
+    - ilsen
+    - sicom
+  section:
+    type: rasa.shared.core.slots.CategoricalSlot
+    initial_value: null
+    auto_fill: true
+    influence_conversation: true
+    values:
+    - m1
+    - m2
+  word:
+    type: rasa.shared.core.slots.TextSlot
+    initial_value: null
+    auto_fill: true
+    influence_conversation: true
+  trans:
+    type: rasa.shared.core.slots.TextSlot
+    initial_value: null
+    auto_fill: true
+    influence_conversation: true
+  meteo:
+    type: rasa.shared.core.slots.TextSlot
+    initial_value: null
+    auto_fill: true
+    influence_conversation: true
+  requested_slot:
+    type: rasa.shared.core.slots.UnfeaturizedSlot
+    initial_value: null
+    auto_fill: true
+    influence_conversation: false
+responses:
+  utter_greet:
+  - text: Bonjour, quesque je peux faire pour toi ?
+  utter_cheer_up:
+  - image: https://i.imgur.com/nGF1K8f.jpg
+    text: 'je vous remonte le morale:'
+  utter_did_that_help:
+  - text: ça vous aide ?
+  utter_happy:
+  - text: je suis ravie de l'apprendre.
+  utter_goodbye:
+  - text: au plaisir 
+  utter_iamabot:
+  - text: Je ne suis pas humain,je suis un Pepper.
+  utter_ask_section:
+  - text: Alors donnez moi votre section .
+  utter_ask_group:
+  - text: Alors donnez moi votre groupe aussi.
+  utter_ask_sentence:
+  - text: Ravie de vous aider, quel est le mot que vous voulez définir?
+  - text: Quelle définition cherchez vous?
+  utter_ask_translate:
+  - text: C'est parti, que vous voulez traduire?
+  utter_ask_meteo:
+  - text: Dites moi quel ville ?
+  utter_greatful:
+  - text: Avec plaisir, je fais ça avec joie.
+actions:
+- action_schedule
+- action_definition
+- action_translation
+- action_meteo
+forms:
+  name_form:
+    required_slots:
+      word:
+      - type: from_text
+  translate_form:
+    required_slots:
+      trans:
+      - type: from_text
+  meteo_form:
+    required_slots:
+      meteo:
+      - type: from_text
+e2e_actions: []

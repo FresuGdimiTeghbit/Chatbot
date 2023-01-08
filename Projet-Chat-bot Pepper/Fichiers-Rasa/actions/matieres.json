@@ -1,0 +1,66 @@
+{
+    "results": [
+        {
+            "letter": "u",
+            "names": [
+                {
+                    "name": "uce 2 securite des services web",
+                    "code": "S-E06-0662",
+                    "searchString": "uce 2 securite des services web"
+                }
+            ]
+        },
+        {
+            "letter": "u",
+            "names": [
+                {
+                    "name": "uce 2 application d'innovation",
+                    "code": "S-E06-0639",
+                    "searchString": "application innovation"
+                }
+            ]
+        },
+        {
+
+            "letter": "u",
+            "names": [
+                {
+                    "name": "uce 1 anglais (orienté professionnel)",
+                    "code": "S-E06-0622",
+                    "searchString": "anglais (orienté professionnel)"
+                }
+            ]
+        },
+        {
+
+            "letter": "u",
+            "names": [
+                {
+                    "name": "uce 3 sécurité dans les systèmes d'information",
+                    "code": "S-E06-0623",
+                    "searchString": "sécurité systèmes informations"
+                }
+            ]
+        },
+        {
+            "letter": "(",
+            "names": [
+                {
+                    "name": "(option) botanique",
+                    "code": "S-U02-1046",
+                    "searchString": "(option) botanique"
+                }
+            ]
+        },
+        {
+            "letter": "(",
+            "names": [
+                {
+                    "name": "(option) methodes d'inventaires faunistiques",
+                    "code": "S-U02-1047",
+                    "searchString": "(option) methodes d'inventaires faunistiques"
+                }
+            ]
+        }
+    ]
+}

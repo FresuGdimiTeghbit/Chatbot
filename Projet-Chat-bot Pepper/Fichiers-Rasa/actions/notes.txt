@@ -1,0 +1,9 @@
+fichiers :
+	- edtAPI.py : "https://edt-api.univ-avignon.fr/app.php/api/" (BD réelle qui ne marche plus)
+	- apiSimulator.py : ouvre les fichiers et envoie le json pour simuler une API
+	- classesEdt.py : ce qu'on utilise pour transformer le json en objets et passer dans choregraphe
+		* comment l'utiliser dans actions.py :
+			from classesEdt import APIlauncher
+			...
+			apiLauncher = APIlauncher()
+			apiLauncher.getEDTpromotionByGroupe("2-M2EN", "IA-IL-ALT")

@@ -1,0 +1,136 @@
+version: "2.0"
+nlu:
+- intent: greet
+  examples: |
+    - Bonjour
+    - Bonsoir
+    - Salut
+    - hey
+- intent: goodbye
+  examples: |
+    - au revoir
+    - bonne journée 
+    - bonne soirée
+    - au plaisir 
+    - a demain
+- intent: affirm
+  examples: |
+    - biensur
+    - c'est bien
+    - oui
+    - vrai
+    - yes 
+    - tout a fait 
+- intent: deny
+  examples: |
+    - non
+    - no
+    - jamais
+    - pas possible
+    - je refuse
+- intent: mood_great
+  examples: |
+    - parfait
+    - je me sens bien
+    - cava bien
+    - je saute de joie 
+    - I am great
+    - I am amazing
+    - extremely good
+    - very  perfect
+    - so good
+    - je suis heureux
+    - vous allez bien ?
+    - je suis prete a faire le tour de monde 
+- intent: mood_greatful
+  examples: |
+    - merci
+    - gracias 
+    - Thank you very much 
+    - je te remercie infiniment 
+- intent: mood_unhappy
+  examples: |
+    - horrible
+    - je suis trés triste
+    - je me sens pas bien
+    - I'm lonely 
+    - je suis déprimé 
+    - I'm so sad
+    - very sad
+    - unhappy
+    - triste
+    - pas bien 
+    - seule
+    - very alone 
+    - not very good
+    - so sad
+- intent: bot_challenge
+  examples: |
+    - est ce que t'es un robot
+    - are you a human?
+    - je parle avec un robot ?
+    - am I talking to a human?
+- intent: ask_schedule
+  examples: |
+    - emplois de temps
+    - j'ai besoin de mon emplois de temps ?
+    - j'ai quel cours ?
+    - give me the schedule for my section, please.
+    - c'est quoi mes cours ?
+- intent: give_section
+  examples: |
+    - je suis en [M1](section)
+    - my section is [M1](section)
+    - i'm in [M1](section)
+    - [M1](section)
+    - je suis en [M2](section)
+    - ma section est  [M2](section)
+    - my section is [M2](section)
+    - i'm in [M2](section)
+    - [M2](section)
+- intent: give_group
+  examples: |
+    - mon groupe est [Ia](grp)
+    - je suis dans le groupe [Ia](grp)
+    - groupe [Ia](grp)
+    - [Ia](grp)
+    - le groupe est [Ia](grp)
+    - mon groupe est [Ilsen](grp)
+    - je suis dans le groupe [Ilsen](grp)
+    - le groupe est  [Ilsen](grp)
+    - [Ilsen](grp)
+    - le groupe est [Ilsen](grp)
+    - group [Ilsen](grp)
+    - le groupe est [Sicom](grp)
+    - je suis dans le groupe [Sicom](grp)
+    - group [Sicom](grp)
+    - [Sicom](grp)
+
+- intent: ask_definition
+  examples: |
+    - peut tu me donner la définition d'un mot ?
+    - je n'arrive pas a comprendre un mot.
+    - tu peux me donner une définition d'un mot.
+    - vous arrivez a définir les phrase ?
+    - je veux la définition d'un mot
+- intent: give_word
+  examples: |
+    - malade
+
+- intent: ask_translate
+  examples: |
+    - j'ai besoin d'aide pour traduire une phrase.
+    - peut tu me donner la traduction d'une phrase ?
+    - pouvez vous me traduire une phrase ?
+    - vous arrivez a traduire les phrase ?
+    - je veux la traduction
+- intent: give_trans
+  examples: |
+    - la vie est belle
+
+- intent: ask_meteo
+  examples: |
+    - quelle est la méteo de jour ?
+- intent: give_meteo
+  examples: |
+    - Paris

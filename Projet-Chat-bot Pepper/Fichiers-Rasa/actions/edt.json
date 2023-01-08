@@ -1,0 +1,61 @@
+{
+    "results": [
+        {
+            "formation": "2-M2EN",
+            "date": "5-12-2022",
+            "names": [
+                {
+                    "matiereCode": "S-E06-0639",
+                    "enseignant": "Fabrice Lefèvre",
+                    "heureDebut": "10:00", 
+                    "heureFin": "13:00",
+                    "salleCode": "stat1",
+                    "type": "TP", 
+                    "groupe": "appli1"
+                }, 
+                {
+                    "matiereCode": "S-E06-0639",
+                    "enseignant": "Mickaël Rouvier",
+                    "heureDebut": "10:00", 
+                    "heureFin": "13:00",
+                    "salleCode": "stat2",
+                    "type": "TP", 
+                    "groupe": "appli2"
+                },
+                {
+                    "matiereCode": "S-E06-0622",
+                    "enseignant": "Lilian Rondin",
+                    "heureDebut": "16:00", 
+                    "heureFin": "17:30",
+                    "salleCode": "S7",
+                    "type": "TD", 
+                    "groupe": "IA-IL-CLA-GR1"
+                },
+                {
+                    "matiereCode": "S-E06-0622",
+                    "enseignant": "Lilian Rondin",
+                    "heureDebut": "14:30", 
+                    "heureFin": "16:00",
+                    "salleCode": "S7",
+                    "type": "TD", 
+                    "groupe": "IA-IL-CLA-GR2, IA-IL-ALT"
+                }
+            ]
+        },
+        {
+            "formation": "2-M2EN",
+            "date": "6-12-2022",
+            "names": [
+                {
+                    "matiereCode": "S-E06-0639",
+                    "enseignant": "Fabrice Lefèvre",
+                    "heureDebut": "10:00", 
+                    "heureFin": "13:00",
+                    "salleCode": "stat1",
+                    "type": "TP", 
+                    "groupe": "appli1"
+                }
+            ]
+        }
+    ]
+}

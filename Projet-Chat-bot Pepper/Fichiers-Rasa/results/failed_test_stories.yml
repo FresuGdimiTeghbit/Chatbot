@@ -1,0 +1,133 @@
+version: "2.0"
+stories:
+- story: Story from Conversation ID 46a2fc320e984667b77e4afca3e563cf (.\tests\test_stories.yml)
+  steps:
+  - slot_was_set:
+    - section: m2
+  - action: utter_ask_group  # predicted: action_listen
+  - intent: give_group  # predicted: ask_schedule: ingénieur systemes informatiques communicants
+    entities: []
+  - slot_was_set:
+    - group: ingénieur systemes informatiques communicants
+  - action: action_schedule
+  - action: utter_goodbye
+- story: Story from Conversation ID 46a2fc320e984667b77e4afca3e563cf (.\tests\test_stories.yml)
+  steps:
+  - slot_was_set:
+    - section: m2
+  - action: utter_ask_group  # predicted: action_listen
+  - intent: give_group  # predicted: ask_schedule: informatiques communicants
+    entities: []
+  - slot_was_set:
+    - group: ingénieur systemes informatiques communicants
+  - action: action_schedule
+  - action: utter_goodbye
+- story: Story from Conversation ID 46a2fc3 (.\tests\test_stories.yml)
+  steps:
+  - slot_was_set:
+    - section: m2
+  - action: utter_ask_group  # predicted: action_listen
+  - intent: give_group  # predicted: ask_schedule: systemes informatiques communicants
+    entities: []
+  - slot_was_set:
+    - group: ingénieur systemes informatiques communicants
+  - action: action_schedule
+  - action: utter_goodbye
+- story: Story from Conversation ID 89ce526a662846228645485da64343a2 (.\tests\test_stories.yml)
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: ask_schedule
+  - action: utter_ask_section
+  - intent: give_section
+    entities:
+    - section: m1
+  - slot_was_set:
+    - section: m1
+  - slot_was_set:
+    - section: m1
+  - action: utter_ask_group
+  - intent: give_group  # predicted: ask_schedule: systemes informatiques communicants
+    entities: []
+  - slot_was_set:
+    - group: informatiques communicants
+  - action: action_schedule
+  - action: utter_goodbye
+- story: happy path 1 (.\tests\test_stories.yml)
+  steps:
+  - intent: greet  # predicted: mood_great: hello there!
+  - action: utter_greet
+  - intent: mood_great
+  - action: utter_happy
+- story: happy path 2 (.\tests\test_stories.yml)
+  steps:
+  - intent: greet  # predicted: mood_great: hello there!
+  - action: utter_greet
+  - intent: mood_great
+  - action: utter_happy
+  - intent: goodbye  # predicted: greet: bye-bye!
+  - action: utter_goodbye
+- story: sad path 1 (.\tests\test_stories.yml)
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: mood_unhappy
+  - action: utter_cheer_up
+  - action: utter_did_that_help
+  - intent: affirm  # predicted: nlu_fallback: yes
+  - action: utter_happy
+- story: sad path 2 (.\tests\test_stories.yml)
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: mood_unhappy
+  - action: utter_cheer_up
+  - action: utter_did_that_help
+  - intent: deny  # predicted: mood_unhappy: not really
+  - action: utter_goodbye
+- story: say goodbye (.\tests\test_stories.yml)
+  steps:
+  - intent: goodbye  # predicted: greet: bye-bye!
+  - action: utter_goodbye
+- story: Story from Conversation ID b2b82605ee614ce3b3c2b498c9edaac6 (.\tests\test_stories.yml)
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: ask_schedule
+  - action: utter_ask_section
+  - intent: give_section
+    entities:
+    - section: m1
+  - slot_was_set:
+    - section: m1
+  - slot_was_set:
+    - section: m1
+  - action: utter_ask_group
+  - intent: give_group  # predicted: nlu_fallback: intelligence artificielle
+    entities: []
+  - slot_was_set:
+    - section: m1
+  - slot_was_set:
+    - group: artificielle
+  - action: action_schedule
+  - action: utter_goodbye
+- story: Story from Conversation ID 2ce78fbef3e14ed5ac77bbbd75c43cb9 (.\tests\test_stories.yml)
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: ask_schedule
+  - action: utter_ask_section
+  - intent: give_section
+    entities:
+    - section: m1
+  - slot_was_set:
+    - section: m1
+  - slot_was_set:
+    - section: m1
+  - action: utter_ask_group
+  - intent: give_group  # predicted: nlu_fallback: logiciel de la societe numerique
+    entities: []
+  - slot_was_set:
+    - group: logiciel de la societe
+  - action: action_schedule
+  - action: utter_goodbye
